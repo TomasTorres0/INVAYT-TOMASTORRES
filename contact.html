@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body class="contact">
+    <div class="contenedorcontact">
+<header class="menucontact">
+        <img src="./imagenes/logo.png" alt="A&T" width="300px" height="80px">
+       
+        <div>
+            <ul class="menucontact">
+             <li><a href="index.html">HOME</a></li>
+             <li><a href="contact.html">CONTACTO</a></li>
+             <li><a href="cartera.html">CARTERA</a></li>
+             <li><a href= "mercados.html">MERCADOS</a></li>
+            </ul>
+        </div>
+</header>
+   
+   
+<main >
+   
+    <h2>Rellena los campos y nos pondremos en contacto</h2>
+        
+    <form> 
+   
+        <label for="nombreapellido">Nombre y Apellido</label>
+            <input type="text" id="nombreapellido" class="idpadron" required>
+            <br>
+            <br>
+            
+        <label for="correoelectronico">Correo electronico</label>
+            <input type="email" id="correoelectronico" class="idpadron" required placeholder="email@dominio.com">
+            <br>
+            <br>
+           
+        <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono" class="idpadron" required placeholder="(XX) XXXX XXXX"> 
+            <br>
+            <br>
+   
+        <label for="mensaje">Mensaje</label>
+
+            <br>
+
+        <textarea cols="60" rows="10"></textarea>
+            <br>
+            <br>
+   
+             <fieldset>
+             
+             <legend>¿Como le gustaria que lo contactemos?</legend>
+            <br>
+             
+             <label class="formulario" for="radio-email"><input type="radio" name="contacto" value="email" >Email</label>
+            
+   
+             <label class="formulario" for="radio-telefono"><input type="radio" name="contacto" value="telefono" >Telefono</label> 
+             
+          
+             <label class="formulario" for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" checked>Whatsapp</label> 
+             <br>
+             <input class="enviar" type="submit" value="enviar formularios">
+             
+           
+             </fieldset>
+              <br>
+              <div>
+                <legend>¿En que horario le gustaria ser contactado?</legend>
+                <br>
+                <select class="select">
+                <option>mañana</option>
+                <option>tarde</option>
+                <option>noche</option>
+                </select>
+              </div>
+                 <br>
+            
+   
+             <label class="checkbox"><input type="checkbox" checked>¿le gustaria recibir novedades de Inversiones A&T?</label>    
+   
+             
+             <table>
+             <thead>  
+                  <tr>
+                  <td>dia</td>
+                  <td>horarios</td>
+                  </tr>
+             </thead> 
+             <tbody>
+                  <tr>
+                  <td>lunes</td>
+                  <td>08hs~20hs</td>
+                  </tr>
+                  <tr>
+                  <td>miercoles</td>
+                  <td>08hs~20hs</td>
+                  </tr>           
+                  <tr>
+                  <td>viernes</td>
+                  <td>08hs~20hs</td>
+                  </tr>
+             </tbody> 
+             </table>
+        </main>
+        </form>
+        <br>
+
+        <div class="pagcontact">
+            <footer >
+                <p class="copyright">&copy copyright Inversiones A&T 2022</p>
+                <div class="piedepaguina">
+                    <img src="./imagenes/logofacebook.jpg" alt="facebook" width="60px" height="60px">
+                    <img src="./imagenes/logointagram.jpg" alt="instagram" width="60px" height="60px">
+                    <img src="./imagenes/logowhastsapp.jpg" alt="whastsapp" width="60px" height="60px">
+                    <img src="./imagenes/logoyoutube.jpg" alt="youtube" width="60px" height="60px">
+                  </div>
+           </footer>
+        </div>
+    </div>
+   
+        </body>
+    
+
+</html>

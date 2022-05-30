@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+    background-color: rgb(40, 49, 49);
+    color: black;
+    font-family: sans-serif;
+  }
+.contenedor {
+    width: 98%;
+    max-width: 1440px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:"logomedia logomedia logomedia"
+                        "header header header"
+                        "contenido contenido sidebar"
+                        "opc1 opc2 opc3"
+                        "footer footer footer";
+}
+
+
+.contenedor > div,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .sidebar,
+.contenedor .footer {
+    background: aquamarine;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.contenedor .header {
+    background: #73777B;
+    color: #F1EEE9;
+    grid-area: header;
+    
+}
+
+.logo {
+    float: right;
+    margin-top: 12px;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    font-size: x-large;
+    font-weight:lighter;
+    font-style: italic;
+    list-style: none;
+    
+}
+
+.contenedor .contenido {
+   grid-area: contenido;
+}
+
+.parrafo { 
+  -moz-column-count: 3;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 20px;
+  column-count: 3;
+  column-gap: 20px;
+}
+.contenedor .sidebar {
+   
+    background: #15133C;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    grid-area: sidebar;
+}
+
+.contenedor .opc1,
+.contenedor .opc2,
+.contenedor .opc3 {
+  background: #F1EEE9;
+  color: white;
+  height: 540px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 180px;
+  height: 160px;
+}
+
+.contenedor .opc1 {
+    display: table-column;
+    text-align: center;
+    grid-area: opc1;
+}
+.contenedor .opc2 {
+    grid-area: opc2;
+    display: table-column;
+    text-align: center;
+}
+.contenedor .opc3 {
+    grid-area: opc3;
+    display: table-column;
+    text-align: center;
+    
+}
+h3 {
+    margin: 10px 0 10px 0;
+    color: black;
+    font-size: x-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+}
+ol  {
+    color: #EC994B;
+    font-style: bolder;
+    font-size: large;
+}
+button {
+    margin-top: 20px;
+    color: blue;
+ }
+
+.contenedor .footer {
+    background: #ffffff;
+    color: white;
+    grid-area: footer;
+}
+
+.copyright {
+    margin: 15px 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: #15133C;
+    font-style: italic;
+}
+
+.piedepaguina {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* COMIENZA LA HOJA DE ESTILO DE LA PAGUINA CONTACTOS */
+.contenedorcontact {
+   margin: 0 0 0 15px;
+  
+}
+
+.contact  {
+    display: flex;
+    flex-direction: column;
+    background: #DDDDDD;
+}
+
+ul { 
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+h2 { 
+    font-size: x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    margin: 15px 0 15px 10px;
+}
+
+.formulario {
+    margin: 10px 10px 10px 10px;
+    padding: 1em;
+}
+
+.enviar {
+    margin: 1em;
+}
+
+.select {
+    color: red;
+    font-size: large;
+}
+.pagcontact {
+   background: #DDDDDD; 
+   height: 8em;
+}
+
+@media screen and (max-width:700px){
+    .contenedor {
+    margin-top: 0%;
+    grid-template-areas:"logomedia logomedia logomedia"
+                        "header header header"
+                        "contenido contenido contenido"
+                        "sidebar sidebar sidebar"
+                        "opc1 opc1 opc1"
+                        "opc2 opc2 opc2"
+                        "opc3 opc3 opc3"
+                        "footer footer footer";
+    }  
+
+    .logomedia {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .parrafo { 
+        -moz-column-count: 1;
+        -moz-column-gap: 20px;
+        -webkit-column-count: 1;
+        -webkit-column-gap: 20px;
+        column-count: 1;
+        column-gap: 20px;
+      }
+    .menu {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+     }
+    
+     .menucontact { 
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+
+    
+
