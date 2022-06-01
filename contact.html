@@ -11,23 +11,25 @@
     <div class="contenedorcontact">
 <header class="menucontact">
         <img src="./imagenes/logo.png" alt="A&T" width="300px" height="80px">
-       
-        <div>
-            <ul class="menucontact">
-             <li><a href="index.html">HOME</a></li>
-             <li><a href="contact.html">CONTACTO</a></li>
-             <li><a href="cartera.html">CARTERA</a></li>
-             <li><a href= "mercados.html">MERCADOS</a></li>
-            </ul>
-        </div>
+        <nav class="navbar bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand">CONTACTO</a>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
 </header>
    
    
-<main >
-   
+<main class="maincontact">
+   <div>
     <h2>Rellena los campos y nos pondremos en contacto</h2>
+   </div>
+    
         
-    <form> 
+    <form class="formcontact"> 
    
         <label for="nombreapellido">Nombre y Apellido</label>
             <input type="text" id="nombreapellido" class="idpadron" required>
@@ -56,18 +58,18 @@
              
              <legend>¿Como le gustaria que lo contactemos?</legend>
             <br>
-             
-             <label class="formulario" for="radio-email"><input type="radio" name="contacto" value="email" >Email</label>
+             <div class="formulariocontact">
+                <label class="formulario" for="radio-email"><input type="radio" name="contacto" value="email" >Email</label>
             
    
-             <label class="formulario" for="radio-telefono"><input type="radio" name="contacto" value="telefono" >Telefono</label> 
+                <label class="formulario" for="radio-telefono"><input type="radio" name="contacto" value="telefono" >Telefono</label> 
              
           
-             <label class="formulario" for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" checked>Whatsapp</label> 
+                <label class="formulario" for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" checked>Whatsapp</label> 
              <br>
-             <input class="enviar" type="submit" value="enviar formularios">
-             
-           
+             <input class="enviar" type="submit" value="enviar formularios"> 
+             </div>
+               
              </fieldset>
               <br>
               <div>
@@ -113,7 +115,7 @@
 
         <div class="pagcontact">
             <footer >
-                <p class="copyright">&copy copyright Inversiones A&T 2022</p>
+                <p class="copyrightcontact">&copy copyright Inversiones A&T 2022</p>
                 <div class="piedepaguina">
                     <img src="./imagenes/logofacebook.jpg" alt="facebook" width="60px" height="60px">
                     <img src="./imagenes/logointagram.jpg" alt="instagram" width="60px" height="60px">

@@ -3,7 +3,7 @@
   padding: 0;
 }
 body {
-    background-color: rgb(40, 49, 49);
+    background-color: #F0EBCC;
     color: black;
     font-family: sans-serif;
   }
@@ -14,10 +14,12 @@ body {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, auto);
+    grid-template-rows: repeat(6, auto);
     grid-template-areas:"logomedia logomedia logomedia"
                         "header header header"
-                        "contenido contenido sidebar"
+                        "contenido contenido contenido"
+                        "sidebar sidebar sidebar"
+                        "paquetes paquetes paquetes"
                         "opc1 opc2 opc3"
                         "footer footer footer";
 }
@@ -27,37 +29,57 @@ body {
 .contenedor .header,
 .contenedor .contenido,
 .contenedor .sidebar,
-.contenedor .footer {
-    background: aquamarine;
-    padding: 20px;
+.contenedor .footer
+.contenedor .paquetes{
+    padding: 5px;
     border-radius: 4px;
 }
 
 .contenedor .header {
-    background: #73777B;
-    color: #F1EEE9;
+    background: #B8F1B0;
+    color: #ffa200;
     grid-area: header;
     
 }
-
+.logo:hover {
+    transform: translate(10px ,10px);
+    transform: rotate(5deg);
+    transition: heigth 2s;
+}
 .logo {
     float: right;
     margin-top: 12px;
 }
 .menu {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
     font-size: x-large;
-    font-weight:lighter;
-    font-style: italic;
+    font-family: serif;
     list-style: none;
-    
+    margin: 30px;
+    color: black;
 }
-
+.nav {
+    transition-duration: 4s;
+}
+.nav:hover {
+    background-color: #A5BECC;
+    transition-duration: 3s;
+}
 .contenedor .contenido {
    grid-area: contenido;
 }
-
+.estilo {
+    display: flex;
+    justify-content: space-around;
+    color: #04009A;
+}
+.estilo:hover {
+    animation-duration: 2s;
+    animation-name: animate__pulse;
+}
+ /*/////////////////////////////////////////////////////////////////////////////////////*/
 .parrafo { 
   -moz-column-count: 3;
   -moz-column-gap: 20px;
@@ -65,10 +87,9 @@ body {
   -webkit-column-gap: 20px;
   column-count: 3;
   column-gap: 20px;
+  font-family: cursive;
 }
 .contenedor .sidebar {
-   
-    background: #15133C;
     text-align: center;
     display: flex;
     align-items: center;
@@ -76,13 +97,18 @@ body {
     min-height: 100px;
     grid-area: sidebar;
 }
-
+.contenedor .paquetes {
+    color: #15133C;
+    display: flex;
+    justify-content: space-around;
+    grid-area: paquetes;
+}
 .contenedor .opc1,
 .contenedor .opc2,
 .contenedor .opc3 {
   background: #F1EEE9;
   color: white;
-  height: 540px;
+  height: 620px;
   text-align: center;
   display: flex;
   align-items: center;
@@ -92,6 +118,7 @@ body {
 .card {
   width: 180px;
   height: 160px;
+  margin-left: 8em;
 }
 
 .contenedor .opc1 {
@@ -148,16 +175,28 @@ button {
     justify-content: space-around;
 }
 
-/* COMIENZA LA HOJA DE ESTILO DE LA PAGUINA CONTACTOS */
+/* COMIENZA LA HOJA DE ESTILO DE LA PAGUINA CONTACTOS //////////////////////////////////////*/
 .contenedorcontact {
    margin: 0 0 0 15px;
-  
 }
-
-.contact  {
+.navbar-brand {
+    font-family: serif;
+    font-size: x-large;
+}
+.menucontact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.maincontact {
     display: flex;
     flex-direction: column;
-    background: #DDDDDD;
+    align-items: center;
+}
+.contact  {
+    background-image:linear-gradient( #73777B,#15133C, white);/*PROBANDO ANIMACIONES*/
+    display: flex;
+    flex-direction: column;
 }
 
 ul { 
@@ -189,8 +228,16 @@ h2 {
     font-size: large;
 }
 .pagcontact {
-   background: #DDDDDD; 
    height: 8em;
+}
+.copyrightcontact {
+    margin: 15px 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+    font-style: italic;
 }
 
 @media screen and (max-width:700px){
@@ -200,6 +247,7 @@ h2 {
                         "header header header"
                         "contenido contenido contenido"
                         "sidebar sidebar sidebar"
+                        "paquetes paquetes paquetes"
                         "opc1 opc1 opc1"
                         "opc2 opc2 opc2"
                         "opc3 opc3 opc3"
@@ -232,7 +280,48 @@ h2 {
         flex-direction: column;
         flex-wrap: wrap;
     }
-}
+
+    .card {
+        width: 180px;
+        height: 160px;
+        margin:auto;
+      }
+      .contenedor .opc1{
+        height: 510px;
+    }
+    .contenedor .opc2{
+        height: 480px;
+    }
+      .contenedor .opc3{
+          height: 680px;
+      }
+    button:hover {
+        color: red;
+        transform: rotate(5deg);
+        transition: heigth 2s;
+        }
+
+       .maincontact {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         align-items: stretch;
+       }
+       .formcontact {
+           display: flex;
+           flex-direction: column;
+           align-items: baseline;
+       }
+       textarea {
+         width: 290px;
+       }
+       .formulariocontact {
+           display: flex;
+           flex-direction: column;
+       }
+
+    }
+ 
 
 
     
