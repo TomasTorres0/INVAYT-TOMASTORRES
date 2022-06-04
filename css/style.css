@@ -240,6 +240,40 @@ h2 {
     font-style: italic;
 }
 
+/* COMIENZA LA HOJA DE ESTILO DE LA PAGUINA GRAFICOS //////////////////////////////////////*/
+
+
+.iniciograficos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+}
+
+.parrafograficos {
+    text-align: center;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1em;
+}
+.titulograf {
+    text-align: center;
+    color:#73777B;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sectiongraf {
+   
+}
+
+.card {
+    margin: 0 10px 0 10px;
+}
+
+.footergraf {
+    margin-top: 300px;
+}
+
 @media screen and (max-width:700px){
     .contenedor {
     margin-top: 0%;
@@ -274,7 +308,7 @@ h2 {
         flex-wrap: wrap;
         align-content: center;
      }
-    
+    /* COMIENZA LA HOJA DE ESTILO DE LA PAGUINA CONTACTO //////////////////////////////////////*/
      .menucontact { 
         display: flex;
         flex-direction: column;
@@ -300,7 +334,7 @@ h2 {
         transform: rotate(5deg);
         transition: heigth 2s;
         }
-
+   
        .maincontact {
          display: flex;
          flex-direction: row;
@@ -319,7 +353,28 @@ h2 {
            display: flex;
            flex-direction: column;
        }
-
+       /* COMIENZA LA HOJA DE ESTILO DE LA PAGUINA GRAFICOS //////////////////////////////////////*/
+       .parrafograficos { 
+        -moz-column-count: 1;
+        -moz-column-gap: 10px;
+        -webkit-column-count: 1;
+        -webkit-column-gap: 10px;
+        column-count: 1;
+        column-gap: 10px;
+        font-family: cursive;
+      }
+      .card {
+          width: 270px;
+          height: 482px;
+          margin: auto;
+      }
+      .img-fluid {
+          width: 290px;
+          height: 170px;
+      }
+      .footergraf {
+          margin-top: 0%;
+      }
     }
  
 
