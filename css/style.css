@@ -266,9 +266,15 @@ h2 {
 .card-group {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     width: 300px;
     height: 300px;
     align-content: center;
+    margin: auto;
+    
+}
+.cardgraf {
+    margin: 0 15px 0 15px;
 }
 
 .footergraf {
@@ -285,7 +291,7 @@ h2 {
     background-image: linear-gradient(#92B4EC ,#FFFFFF ,#FFE69A ,#FFD24C,#FFFFFF);
     padding: 2em;
 }
-pre {
+.pgraf {
     font-family: 'Times New Roman', Times, serif;
     font-size: xx-large;
     font-weight: 100;
@@ -402,6 +408,9 @@ pre {
         font-family: cursive;
       }
       .cardgraf {
+          display: flex;
+          flex-direction: row;
+          flex-direction: column;
           width: 270px;
           height: 482px;
           margin: auto;
@@ -411,8 +420,29 @@ pre {
           height: 170px;
       }
       .footergraf {
-          margin-top: 0%;
+          margin-top: 920px;
       }
+      .card-group {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+       
+    }
+     /* COMIENZA LA HOJA DE ESTILO DE LA PAGUINA GRAFICOS //////////////////////////////////////*/
+
+     pre{
+        display: flex;
+     }
+
+     .imagecursos {
+        margin: auto;
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around; 
+     }
+
     }
  
 
