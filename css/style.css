@@ -12,7 +12,7 @@ body {
     max-width: 1440px;
     margin: 20px auto;
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 0px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(6, auto);
     grid-template-areas:"logomedia logomedia logomedia"
@@ -23,7 +23,6 @@ body {
                         "opc1 opc2 opc3"
                         "footer footer footer";
 }
-
 
 .contenedor > div,
 .contenedor .header,
@@ -264,8 +263,12 @@ h2 {
 }
 
 
-.card {
-    margin: 0 10px 0 10px;
+.card-group {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    align-content: center;
 }
 
 .footergraf {
@@ -273,10 +276,36 @@ h2 {
 }
 
 /* COMIENZA LA HOJA DE ESTILO DE LA PAGUINA CURSOS //////////////////////////////////////*/
-#fondo {
-    background-image: url(imagenprincipal.jpg);
+
+
+
+
+.fondo {
+    width: 100%;
+    background-image: linear-gradient(#92B4EC ,#FFFFFF ,#FFE69A ,#FFD24C,#FFFFFF);
+    padding: 2em;
+}
+pre {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    font-weight: 100;
+    color: #15133C;
+}
+.imagecursos {
+    margin: auto;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  
 }
 
+.ulcurs {
+    display: flex;
+    flex-direction: column;
+    list-style: circle ;
+}
 
 
 @media screen and (max-width:700px){
@@ -313,6 +342,10 @@ h2 {
         flex-wrap: wrap;
         align-content: center;
      }
+     .opc1 {
+         display: flex;
+         flex-direction: column;
+     }
     /* COMIENZA LA HOJA DE ESTILO DE LA PAGUINA CONTACTO //////////////////////////////////////*/
      .menucontact { 
         display: flex;
@@ -321,8 +354,8 @@ h2 {
     }
 
     .card {
-        width: 180px;
-        height: 160px;
+        width: 270px;
+        height: 158px;
         margin:auto;
       }
       .contenedor .opc1{
@@ -368,7 +401,7 @@ h2 {
         column-gap: 10px;
         font-family: cursive;
       }
-      .card {
+      .cardgraf {
           width: 270px;
           height: 482px;
           margin: auto;
