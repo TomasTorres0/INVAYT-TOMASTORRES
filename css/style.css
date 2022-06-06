@@ -272,6 +272,13 @@ h2 {
     margin-top: 300px;
 }
 
+/* COMIENZA LA HOJA DE ESTILO DE LA PAGUINA CURSOS //////////////////////////////////////*/
+#fondo {
+    background-image: url(imagenprincipal.jpg);
+}
+
+
+
 @media screen and (max-width:700px){
     .contenedor {
     margin-top: 0%;
