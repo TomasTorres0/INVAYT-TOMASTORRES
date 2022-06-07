@@ -33,12 +33,10 @@ body {
     padding: 5px;
     border-radius: 4px;
 }
-
 .contenedor .header {
     background: #B8F1B0;
     color: #ffa200;
     grid-area: header;
-    
 }
 .logo:hover {
     transform: translate(10px ,10px);
@@ -48,6 +46,17 @@ body {
 .logo {
     float: right;
     margin-top: 12px;
+}
+.logog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.logomedia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .menu {
     display: flex;
@@ -78,7 +87,6 @@ body {
     animation-duration: 2s;
     animation-name: animate__pulse;
 }
- /*/////////////////////////////////////////////////////////////////////////////////////*/
 .parrafo { 
   -moz-column-count: 3;
   -moz-column-gap: 20px;
@@ -113,13 +121,23 @@ body {
   align-items: center;
   justify-content: center;
 }
-
+.card:hover {
+    animation-duration: 2s;
+    animation-name: animate__bounce , animate__flash , animate__shakeY;
+}
 .card {
   width: 180px;
   height: 160px;
   margin-left: 8em;
 }
-
+ol:hover {
+    color: black;
+    animation-duration: 2s;
+    animation-name: animate__bounce , animate__flash , animate__shakeY;
+}
+ol{
+    list-style: none;
+}
 .contenedor .opc1 {
     display: table-column;
     text-align: center;
