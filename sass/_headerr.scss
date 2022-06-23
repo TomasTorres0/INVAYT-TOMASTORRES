@@ -1,0 +1,33 @@
+.logomedia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: logomedia;
+}
+.logo:hover {
+    transform: translate(10px ,10px);
+    transform: rotate(5deg);
+    transition: heigth 2s;
+}
+header{
+   background-color: #d3cbcb;
+        & ul{
+            display: flex;
+            justify-content: space-around;
+            font-size: x-large;
+            font-family: serif;
+            list-style: none;
+            margin: 30px;
+            color: black;
+            text-decoration: overline;
+            & .nav {
+                transition-duration: 4s;
+            }
+            & .nav:hover {
+                background-color: #A5BECC;
+                transition-duration: 3s;
+            }
+        }
+    }
+    
+   

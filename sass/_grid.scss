@@ -1,0 +1,52 @@
+.contenedor {
+    width: 98%;
+   
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:"logomedia logomedia logomedia"
+                        "header header header"
+                        "contenido contenido contenido"
+                        "sidebar sidebar sidebar"
+                        "paquetes paquetes paquetes"
+                        "opc1 opc2 opc3"
+                        "footer footer footer";
+}
+
+.contenedor > div,
+.contenedor .logomedia,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .sidebar,
+.contenedor .footer,
+.contenedor .paquetes{
+    padding: 5px;
+    border-radius: 4px;
+}
+.contenedor .header {
+    grid-area: header;
+    
+}
+.contenedor .sidebar {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    grid-area: sidebar;
+}
+.contenedor .paquetes {
+    color: #15133C;
+    display: flex;
+    justify-content: space-around;
+    grid-area: paquetes;
+    background-color: #644545;
+}
+.contenedor .container {
+    background: #645858;
+    color: #0a0a0a;
+    grid-area: footer;
+    font-size: 1,8rem;
+}

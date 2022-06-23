@@ -1,0 +1,189 @@
+
+@use 'reset';
+@use 'grid';
+@use 'headerr';
+@use 'contenido';
+@use 'paquetes';
+
+//ESTILO HOJA GRAFICOS*/
+
+.body{ 
+    width: 100%;
+    background-image: linear-gradient(#1A4D2E,#FF9F29,#FAF3E3);
+
+}
+.iniciograficos{
+     & .titulograf{
+        font-size: 3rem;
+        font-family: cursive;
+        text-align: center;
+        color: #000000;
+     }
+     & .parrafograficos{
+        font-size: 1rem;
+        font-family: Helvetica, sans-serif;
+        -moz-column-count: 2;
+        -moz-column-gap: 20px;
+        -webkit-column-count: 2;
+        -webkit-column-gap: 20px;
+        column-count: 2;
+        column-gap: 20px;
+        
+     }
+        & .img-fluid{
+            text-align: center;
+            color: white;
+        }
+    }
+    .sectiongraf{
+        & .titulo2{
+            font-size:3rem;
+            text-align: center;
+            margin: auto;
+        }
+        & .card-group{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 450px;
+            height: 450px;
+            align-content: center;
+            margin: auto;
+
+            & .cardgraf{
+                
+               margin: 25px 15px 0 15px;  
+            }
+            & .card-title{
+                font-size: 2rem;
+                color: #1A4D2E;
+                margin: 10px;
+            }
+            & .card-text{
+                font-size: 20px;
+
+            }
+        }
+    }
+   .container{
+    display: flex;
+    flex-direction: column;
+    background-color: #1ebb5d;
+    margin-top: 200px;
+   }
+
+//ESTILO HOJA CURSOS*/
+
+.maincursos{
+    & .pgraf{
+        font-size: 2rem;
+    }
+    & .imagencursos {
+        text-align: center;
+       & .imagecursos{
+        width: 800px;
+        height: 400px;
+       }
+       & .titulo-sec{
+        text-align: center;
+        font-size: 2rem;
+        font-family: cursive;
+        color: #FAF3E3;
+       }
+       & .parrafocursos{
+        font-size: 1rem;
+        font-family: Helvetica, sans-serif;
+        -moz-column-count: 4;
+        -moz-column-gap: 20px;
+        -webkit-column-count: 4;
+        -webkit-column-gap: 20px;
+        column-count: 4;
+        column-gap: 20px;
+        border: 2px dashed white;
+        margin: 1em;
+       }
+    }
+}
+
+.container-cursos{
+    background-color: #d3f8f3;
+}
+
+//ESTILO HOJA FORO*/
+
+.body-foro{
+    background-image: linear-gradient(#C1A57B, #222831,#222831);
+}
+.container-foro{
+    width: 96%;
+    margin: auto;
+}
+
+//ESTILO HOJA CONTACTOS*/
+
+.maincontact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & .titulo-contact{
+        font-size: 2rem;
+        color: #222831;
+        font-family: cursive;
+        text-align: center;
+        padding: 2rem;
+       
+    }
+
+    & .formcontact {
+        font-size: 1.55rem;
+    }
+}
+.container-curs{
+    width: 100%;
+    background: #222831;
+    color: #d3f8f3;
+   
+  & .nav{
+    display: flex;
+    justify-content: space-around;
+  }
+}
+#menu_on{
+	display: inline-block;
+	width:30px;
+	height: 20px;
+	position: relative;
+	z-index: 2;
+}
+ 
+
+@media screen and (max-width:700px){
+  .contenedor{
+    display: contents;
+    flex-direction: column;
+    & .logo{
+        width: 300px;
+        height: 70px;
+    }
+    & .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+
+  main .parrafo{
+    -moz-column-count: 1;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 1;
+    -webkit-column-gap: 20px;
+    column-count: 1;
+    column-gap: 20px;
+    font-family: cursive;
+  }
+  .paquetes {
+    font-size: 1rem;
+  }
+ 
+ }

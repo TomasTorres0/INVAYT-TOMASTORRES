@@ -1,0 +1,28 @@
+.contenedor .contenido {
+    grid-area: contenido;
+ }
+
+main{
+    & .estilo{
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        color: #04009A;
+        &:hover {
+            animation-duration: 2s;
+            animation-name: animate__pulse;
+        }
+    }
+       
+        & .parrafo {
+             
+            -moz-column-count: 3;
+            -moz-column-gap: 20px;
+            -webkit-column-count: 3;
+            -webkit-column-gap: 20px;
+            column-count: 3;
+            column-gap: 20px;
+            font-family: cursive;
+              
+        }
+    }

@@ -1,0 +1,73 @@
+
+.contenedor .opc1,
+.contenedor .opc2,
+.contenedor .opc3 {
+  background: #ecc685;
+  color: #644545;
+  height: 680px;
+  width: 500px;
+  text-align: center;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.card:hover {
+    animation-duration: 2s;
+    background-color: #ecc685;
+    animation-name: animate__bounce , animate__flash , animate__shakeY;
+}
+.cards{
+    display: flex;
+    border-radius: 5px;
+    margin-left: 238px;
+    & .card{
+        margin-bottom: auto;
+    }
+    & .opc1 {
+        display: flex;
+        text-align: center;
+        grid-area: opc1;
+        margin: 10px;
+        flex-direction: column;
+        border-radius: 8px;
+    }
+        & .opc2 {
+            display: flex;
+            text-align: center;
+            grid-area: opc1;
+            margin: 10px;
+            flex-direction: column;
+            border-radius: 8px;
+            
+        }
+        & .opc3 {
+            grid-area: opc3;
+            display: flex;
+            text-align: center;
+            margin: 10px;
+            flex-direction: column;
+            border-radius: 8px;
+        }
+        & .card{
+            width: 200px;
+            height: 200px;
+            border-radius: 2em;
+            
+        }
+        & h3 {
+            margin: 10px 0 10px 0;
+            color: black;
+            font-size: x-large;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-style: italic;
+        }
+        & ol  {
+            list-style: inside;
+            margin: auto;
+            font-style: bolder;
+            font-size: large;
+            }
+            & button{
+                margin: auto;
+            }
+}
