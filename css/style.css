@@ -3,8 +3,8 @@
   padding: 0;
 }
 
-body {
-  background-image: linear-gradient(#ffffff, #0000ff, #808080);
+.fondoindex {
+  background-color: beige;
   color: black;
   font-family: sans-serif;
 }
@@ -65,6 +65,11 @@ body {
   grid-area: logomedia;
 }
 
+.logo {
+  width: 300px;
+  height: 80px;
+}
+
 .logo:hover {
   transform: translate(10px, 10px);
   transform: rotate(5deg);
@@ -80,9 +85,8 @@ header ul {
   font-size: x-large;
   font-family: serif;
   list-style: none;
-  margin: 30px;
+  margin: 10px;
   color: black;
-  text-decoration: overline;
 }
 header ul .nav {
   transition-duration: 4s;
@@ -132,7 +136,6 @@ main .parrafo {
 .card:hover {
   animation-duration: 2s;
   background-color: #ecc685;
-  animation-name: animate__bounce, animate__flash, animate__shakeY;
 }
 
 .cards {
@@ -189,18 +192,74 @@ main .parrafo {
   margin: auto;
 }
 
+@media (max-width: 600px) {
+  .fondoindex {
+    background-color: #e29146;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: auto;
+  }
+
+  .logomedia {
+    width: 150px;
+    height: 70px;
+    align-items: center;
+    margin-left: 425px;
+  }
+
+  .header {
+    padding: 10px;
+  }
+
+  .estilo {
+    display: block;
+  }
+
+  .parrafo {
+    display: table-caption;
+    width: 685px;
+    text-align: center;
+  }
+
+  .sidebar {
+    display: initial;
+    width: 800px;
+    margin: 60px;
+  }
+
+  .cards {
+    display: block;
+  }
+}
 .body {
-  width: 100%;
   background-image: linear-gradient(#1A4D2E, #FF9F29, #FAF3E3);
+  margin: 20px auto;
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas: "logomedia logomedia logomedia" "header header header" "main main main" "sectiongraf sectiongraf sectiongraf" "footer footer footer";
 }
 
-.iniciograficos .titulograf {
+.logomedia {
+  grid-area: logomedia;
+}
+
+.header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+main .titulograf {
   font-size: 3rem;
   font-family: cursive;
   text-align: center;
   color: #000000;
 }
-.iniciograficos .parrafograficos {
+main .parrafograficos {
   font-size: 1rem;
   font-family: Helvetica, sans-serif;
   -moz-column-count: 2;
@@ -210,9 +269,21 @@ main .parrafo {
   column-count: 2;
   column-gap: 20px;
 }
-.iniciograficos .img-fluid {
+main .img-fluid {
   text-align: center;
   color: white;
+}
+
+.sectiongraf {
+  grid-area: sectiongraf;
+}
+
+.container {
+  grid-area: footer;
+}
+
+.iniciograficos {
+  color: #1A4D2E;
 }
 
 .sectiongraf .titulo2 {
@@ -241,7 +312,7 @@ main .parrafo {
   font-size: 20px;
 }
 
-.container {
+.footer {
   display: flex;
   flex-direction: column;
   background-color: #1ebb5d;
@@ -322,34 +393,4 @@ main .parrafo {
   height: 20px;
   position: relative;
   z-index: 2;
-}
-
-@media screen and (max-width: 700px) {
-  .contenedor {
-    display: contents;
-    flex-direction: column;
-  }
-  .contenedor .logo {
-    width: 300px;
-    height: 70px;
-  }
-  .contenedor .menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  main .parrafo {
-    -moz-column-count: 1;
-    -moz-column-gap: 20px;
-    -webkit-column-count: 1;
-    -webkit-column-gap: 20px;
-    column-count: 1;
-    column-gap: 20px;
-    font-family: cursive;
-  }
-
-  .paquetes {
-    font-size: 1rem;
-  }
 }

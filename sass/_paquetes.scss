@@ -14,7 +14,7 @@
 .card:hover {
     animation-duration: 2s;
     background-color: #ecc685;
-    animation-name: animate__bounce , animate__flash , animate__shakeY;
+   // animation-name: animate__bounce , animate__flash , animate__shakeY; */
 }
 .cards{
     display: flex;
@@ -71,3 +71,41 @@
                 margin: auto;
             }
 }
+
+@media (max-width:600px){
+
+    .fondoindex{
+        background-color: #e29146;
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: auto;
+    }
+    .logomedia{
+      width: 150px;
+      height: 70px;
+      align-items: center;
+      margin-left: 425px;
+    }
+    .header{
+        padding: 10px;
+
+    }
+    .estilo{
+        display: block;
+    }
+    .parrafo{
+        display: table-caption;
+        width: 685px;
+        text-align: center;
+    }
+    .sidebar{
+        
+            display: initial;
+            width: 800px;
+            margin: 60px
+    }
+    .cards{
+        display: block;
+    }
+  }  
